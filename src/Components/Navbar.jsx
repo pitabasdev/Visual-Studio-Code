@@ -67,8 +67,8 @@ const Navbar = (props) => {
         Visual Studio Code
         <BsCloudUploadFill
           onClick={handleUploadClick}
-          className="cursor-pointer"
-          size={20}
+          className="cursor-pointer float-right"
+          size={30}
           color="black"
           title="upload file"
         />

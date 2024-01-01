@@ -101,7 +101,7 @@ function App() {
             className="flex-[50%] w-full h-full border-none outline-none resize-none p-2"
           ></textarea>
         </div>
-        <h3>Output</h3>
+        <h3 className="pl-2">Output</h3>
         {isLoading ? (
           <div className="output border h-2/3 bg-white flex justify-center text-black p-2 font-medium overflow-auto">
             <img src="/loader.svg" alt="...loading" />
