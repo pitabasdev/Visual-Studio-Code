@@ -5,6 +5,7 @@ import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import { BsCloudUploadFill } from "react-icons/bs";
 import { FaPlay } from "react-icons/fa";
+import logo from "../../public/pngwing.com (3).png"
 
 const Navbar = (props) => {
   const chooseFileRef = useRef(null);
@@ -60,7 +61,10 @@ const Navbar = (props) => {
   return (
     <div className="navbar bg-blue-50 flex items-center justify-between p-1 w-[98.2%]">
       <div className="text-black flex justify-start m-2 font-mono font-extralight from-neutral-700 text-lg gap-3 items-center">
-        Approach Junction
+        <span>
+          <img src={logo} style={{height:50}} alt=""></img>
+        </span>
+        Visual Studio Code
         <BsCloudUploadFill
           onClick={handleUploadClick}
           className="cursor-pointer"
