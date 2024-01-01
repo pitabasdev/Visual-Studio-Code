@@ -117,4 +117,6 @@ h4 {
 .run-btn:active {
 	background-color: #6e9427;
 } */
-
+.input-box{
+	border: 1px solid rgb(34, 32, 32);
+}

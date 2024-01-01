@@ -90,16 +90,17 @@ function App() {
           options={options}
         />
       </div>
-      <div className="w-full md:w-2/5 lg:w-1/3 relative">
-        <h3 className="text-lg font-bold mt-2 md:mt-0">Input:</h3>
+      <div className="w-full md:w-2/5 lg:w-1/3 relative ">
+        <h3 className="text-lg font-bold mt-2 md:mt-0 pl-3">Input:</h3>
         <div className="input h-1/3 md:h-300">
           <textarea
             value={userInput}
             onChange={handleInputChange}
-            className="w-full h-full border-none outline-none resize-none p-2"
+            className=" input-box w-full h-full  outline-none resize-none p-2 "
+
           ></textarea>
         </div>
-        <h3 className="text-lg font-bold pl-2">Output</h3>
+        <h3 className="text-lg font-bold pl-2 pt-2">Output</h3>
         {isLoading ? (
           <div className="output h-2/3 bg-white flex justify-center items-center text-black p-2 font-medium overflow-auto">
             <img src="/loader.svg" alt="...loading" />
