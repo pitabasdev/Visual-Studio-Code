@@ -82,13 +82,6 @@ const Navbar = (props) => {
         {isWideScreen && (
           <span className="font-mono font-extralight text-lg">Visual Studio Code</span>
         )}
-        <BsCloudUploadFill
-          onClick={handleUploadClick}
-          className="cursor-pointer float-right"
-          size={30}
-          color="black"
-          title="upload file"
-        />
       </div>
       <div className="hidden">
         <input
@@ -126,6 +119,19 @@ const Navbar = (props) => {
           Run
         </Button>
       </div>
+      <div className={`${isWideScreen ? "flex-row-reverse" : "text-center mt-2"}`}>
+        <BsCloudUploadFill
+          onClick={handleUploadClick}
+          className={`cursor-pointer ${isWideScreen ? "float-right ml-2 mr-3" : "mx-auto"}`}
+          size={30}
+          color="black"
+          title="upload file"
+        />
+        <span className="text-black font-semibold ml-2 cursor-pointer" onClick={handleUploadClick}>
+          Upload File
+        </span>
+      </div>
+
     </div>
   );
 };
