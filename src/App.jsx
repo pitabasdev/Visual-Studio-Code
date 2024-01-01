@@ -52,7 +52,7 @@ function App() {
       setIsLoading(false);
       return;
     }
-    const backendUrl="http://localhost:3001/compile"
+    const backendUrl="https://visula-studio-code-backend.onrender.com/compile"
     const response = await axios.post(backendUrl, {
       code: userCode,
       lang: userLang,
